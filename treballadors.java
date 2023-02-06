@@ -5,7 +5,7 @@
  * @author INSMontsià
  * 
  */
-class Treballador {
+    class Treballador {
     static final int DIRECTOR = 0;
     static final int SUBDIRECTOR = 1;
     static final int BASE = 2;
@@ -28,7 +28,6 @@ class Treballador {
         // Si la longitud del nou nom es inferior a tres caracters llença excepcio
         // avisant del problema
         if (nom.length() < 3) {
-
             throw new Exception("El nom ha de tenir 3 o més caracters");
         }
         // En cas contrari assigna el nom
@@ -71,6 +70,7 @@ class Treballador {
         }
     }
 
-int getTipusTreballador() { 
-return tipusTreballador; 
+    int getTipusTreballador() { 
+    return tipusTreballador; 
 }
+
