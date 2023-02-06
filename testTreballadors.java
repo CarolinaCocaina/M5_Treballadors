@@ -56,7 +56,7 @@ class TreballadorTest {
 
     @Test
     public void testHoresExtres() {
-        /// ACABEU-LO
+        assertEquals()
     }
 
     @Test
