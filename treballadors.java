@@ -74,11 +74,10 @@ class Treballador {
          */
 
         tipusTreballador = tipus;
-    }else
-
-    {// Si el tipus no és valid, creem excepció
-        throw new Exception("Tipus de treballador no vàlid");
     }
+    else {
+        // Si el tipus no és valid, creem excepció
+        throw new Exception("Tipus de treballador no vàlid");
     }
 
     int getTipusTreballador() {
