@@ -1,5 +1,7 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+
+import org.junit.Test;
 
 class TreballadorTest {
     @Test
@@ -51,17 +53,22 @@ class TreballadorTest {
          * L'asserció comprova que la nomina és correcta i en cas contrari * mostra
          * missatge d'error
          */
-        assertEquals(nomina, treballador.getNomina(), "Els dos valors de la nomina han de coincidir!!!");
+        assertEquals(nomina, treballador.getNomina(), 0);
     }
 
     @Test
     public void testHoresExtres() {
-        assertEquals()
+        float horesExtresTreballador = 90;
+        Treballador treballador = new Treballador();
+        treballador.setHoresExtres(90);
+        // assertEquals();
+        assertEquals(horesExtresTreballador, treballador.getHoresExtres(), 0);
     }
 
     @Test
     public void testTipusTreballadorIncorrecte() {
         /// ACABEU-LO
+        assertEquals()
     }
 
     @Test
