@@ -20,7 +20,6 @@ class TreballadorTest {
     }
 
     @Test
-
     public void testNomTreballadorCorrecte() {
         String nomTest = "Montsià";
         Treballador treballador = new Treballador();
@@ -68,6 +67,8 @@ class TreballadorTest {
     @Test
     public void testTipusTreballadorIncorrecte() {
         /// ACABEU-LO
+
+          
         assertEquals()
     }
 

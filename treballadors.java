@@ -72,12 +72,13 @@ class Treballador {
          * Aqui no és recomanable estalviar-se les comprovacions perquè el
          * tipus de treballador només pot ser DIRECTOR, SUbDIRECTOR o BASE
          */
-
-        tipusTreballador = tipus;
-    }
-    else {
-        // Si el tipus no és valid, creem excepció
-        throw new Exception("Tipus de treballador no vàlid");
+        if ((tipus == DIRECTOR) || (tipus == SUBDIRECTOR) || (tipus == BASE)) {
+            // Si el tipus és vàlid, l'assignem
+            tipusTreballador = tipus;
+        } else {
+            // Si el tipus no és valid, creem excepció
+            throw new Exception("Tipus de treballador no vàlid");
+        }
     }
 
     int getTipusTreballador() {
